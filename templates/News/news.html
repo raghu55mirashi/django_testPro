@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %} News {% endblock %}
+
+{% block body %}
+
+<h1>THis is news page</h1>
+<p>created on  {{created}}</p>
+{% for n in news %}
+
+<h2>{{n.title}}</h2>
+<p>{{n.desc}}</p>
+<p>{{n.pub_date}}</p>
+
+<a href='' class='btn btn-primary'>Read More</a>
+{% endfor %}
+
+{% endblock %}
